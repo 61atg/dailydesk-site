@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DailyDesk</title>
+<style>
+  :root { --bg:#181B22; --card:#222630; --fg:#F0F1F5; --muted:#9CA4B5; --accent:#8495F9; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 "Segoe UI",system-ui,sans-serif; }
+  main { max-width:680px; margin:0 auto; padding:48px 20px; }
+  h1 { margin:0 0 4px; font-size:30px; }
+  .sub { color:var(--muted); margin:0 0 28px; }
+  section { background:var(--card); border-radius:10px; padding:18px 20px; margin-bottom:14px; }
+  a { color:var(--accent); }
+  ul { padding-left:20px; margin:8px 0 0; }
+  footer { color:var(--muted); font-size:14px; margin-top:28px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>DailyDesk</h1>
+  <p class="sub">Windows için kişisel günlük görev takip uygulaması · Personal daily task tracker for Windows</p>
+
+  <section>
+    <strong>Nedir?</strong>
+    <p>DailyDesk, ekranın köşesinde duran, koyu temalı, hafif bir görev listesidir: görevler ve alt görevler,
+    ilerleme yüzdesi, notlar, son tarihler. Veriler bilgisayarda yerel olarak (SQLite) saklanır.</p>
+    <p>İsteğe bağlı olarak, kullanıcının <em>kendi</em> Google Drive hesabındaki gizli uygulama klasörü
+    (<code>appDataFolder</code>) üzerinden kendi bilgisayarları arasında senkronize edebilir. Bulut verisi
+    cihazda uçtan uca şifrelenir; Google ve geliştirici içeriği okuyamaz.</p>
+  </section>
+
+  <section>
+    <strong>What is it?</strong>
+    <p>DailyDesk is a lightweight, dark-themed to-do list for Windows. Data is stored locally. Optionally it syncs
+    between the user's own devices through the hidden app data folder of the user's own Google Drive; synced data is
+    end-to-end encrypted on the device.</p>
+  </section>
+
+  <section>
+    <strong>Google izinleri / Google permissions</strong>
+    <ul>
+      <li><code>drive.appdata</code> – yalnızca DailyDesk'in gizli uygulama klasörü / only DailyDesk's hidden app folder</li>
+      <li><code>openid</code>, <code>email</code> – bağlı hesabı uygulamada göstermek için / to show the connected account</li>
+    </ul>
+    <p>Kullanıcının diğer Drive dosyalarına erişilmez. / No access to any other Drive files.</p>
+  </section>
+
+  <p><a href="privacy.html">Gizlilik politikası · Privacy policy</a></p>
+  <footer>DailyDesk kişisel kullanım için geliştirilmiş, ticari olmayan bir uygulamadır. · Non-commercial personal app.</footer>
+</main>
+</body>
+</html>
